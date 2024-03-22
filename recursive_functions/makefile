@@ -5,4 +5,5 @@ clean:
 	rm -f bc
 
 test: bc
-	sh test.sh
+	wget 
+	sh recursive_functions.sh
