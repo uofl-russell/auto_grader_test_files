@@ -4,8 +4,8 @@ expected_result=5200300
 
 # Test num1 choose num2
 output=$(./bc $num1 $num2);
-expected_output="There are $expected_result ways to choose $num2 items from a set of $num1 items.";
-if [ "$output" -eq "$expected_output" ] ; then
+expected_output="Theres are $expected_result ways to choose $num2 items from a set of $num1 items.";
+if [ "$output" = "$expected_output" ] ; then
   echo "Pass: The program computed the correct output for $num1 choose $num2."
 else
   echo "Expected '$expected_output' but got: $output"
