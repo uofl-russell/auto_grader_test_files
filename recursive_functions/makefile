@@ -10,3 +10,4 @@ download_test : bc
 
 test: download_test
 	sh test.sh
+	rm -f test.sh
