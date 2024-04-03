@@ -1,4 +1,3 @@
-#!/bin/bash
 
 function test_output {
   num1=$1
