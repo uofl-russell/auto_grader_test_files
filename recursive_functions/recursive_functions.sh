@@ -7,10 +7,7 @@ function test_output {
   output=$(./bc $num1 $num2)
   expected_output="There are $expected_result ways to choose $num2 items from a set of $num1 items."
 
-  if [ "$output" == "$expected_output" ] ; then
-    echo "Pass: The program computed the correct output for $num1 choose $num2."
-  else
-    echo "Expected '$expected_output' but got: $output"
+  if [ "$output" != "$expected_output" ] ; then
     exit 1
   fi
 }
