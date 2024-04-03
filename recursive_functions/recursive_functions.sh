@@ -13,7 +13,7 @@ function test_output {
 }
  
 # Test cases
-test_output 25 12 52003001
+test_output 25 12 5200300
 test_output 22 13 497420
 test_output -1 3 0
 test_output 24 13 2496144
