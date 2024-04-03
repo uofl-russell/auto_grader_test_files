@@ -15,7 +15,7 @@ function test_output {
     exit 1
   fi
 }
-
+ 
 # Test cases
 test_output 25 12 52003001
 test_output 22 13 497420
