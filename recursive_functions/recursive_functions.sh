@@ -7,12 +7,12 @@ function test_output {
   output=$(./program $num1 $num2)
   expected_output="There are $expected_result ways to choose $num2 items from a set of $num1 items."
 
-  if [ "$output" == "$expected_output" ] ; then
-    echo -e "\033[0;32m\u2714 Pass:\033[0m The program computed the correct output for $num1 choose $num2."
-  else
-    echo -e "\033[0;31m\u2718 Fail:\033[0m Expected '$expected_output' but got: $output"
+if [ "$output" == "$expected_output" ] ; then
+    echo -e "\033[0;32m✔ Pass:\033[0m The program computed the correct output for $num1 choose $num2."
+else
+    echo -e "\033[0;31m✘ Fail:\033[0m Expected '$expected_output' but got: $output"
     exit 1
-  fi
+fi
 }
  
 # Test cases
