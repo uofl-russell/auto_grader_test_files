@@ -1,8 +1,8 @@
 build: binomial_coefficient.c
 	gcc -o program binomial_coefficient.c
 
-clean:
-	rm -f program test.sh
+clean: delete-test
+	rm -f program
 
 delete-test:
 	rm -f test.sh
