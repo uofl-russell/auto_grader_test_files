@@ -10,5 +10,5 @@ delete-test:
 download-test: 
 	curl -o test.sh https://raw.githubusercontent.com/uofl-russell/auto_grader_test_files/main/recursive_functions/recursive_functions.sh
 
-test: clean download_test
+test: 
 	bash test.sh

@@ -4,7 +4,7 @@ function test_output {
   num2=$2
   expected_result=$3
 
-  output=$(./bc $num1 $num2)
+  output=$(./program $num1 $num2)
   expected_output="There are $expected_result ways to choose $num2 items from a set of $num1 items."
 
   if [ "$output" == "$expected_output" ] ; then
