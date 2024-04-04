@@ -2,7 +2,7 @@ build: binomial_coefficient.c
 	gcc -o program binomial_coefficient.c
 
 clean:
-	rm -f bc test.sh
+	rm -f program test.sh
 
 delete-test:
 	rm -f test.sh
