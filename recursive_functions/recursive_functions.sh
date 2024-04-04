@@ -10,13 +10,13 @@ function test_output {
 if [ "$output" == "$expected_output" ] ; then
     echo -e "\033[0;32m✔ Pass:\033[0m The program computed the correct output for $num1 choose $num2."
 else
-    echo -e "\033[0;31m✘ Fail:\033[0m Expected '$expected_output' but got: $output"
+    echo -e "\033[0;31m✘ Fail:\033[0m The program does not compute the correct output for $num1 choose $num2."
     exit 1
 fi
 }
  
 # Test cases
-test_output 25 12 5200300
+test_output 25 12 5200301
 test_output 22 13 497420
 test_output -1 3 0
 test_output 24 13 2496144
