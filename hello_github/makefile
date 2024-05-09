@@ -1,4 +1,4 @@
-clean: delete-test
+clean:
 	rm -f test.py
 	rm -f test.sh
 
