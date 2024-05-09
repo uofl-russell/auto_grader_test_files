@@ -13,7 +13,7 @@ if json_count > 1:
     print("Multiple JSON files found. There should only be one JSON file.")
     sys.exit(1)
 
-filename = 'data_primary.json'
+filename = 'data.json'
 validData = {
     "firstName": "Sam",
     "lastName": "Smith",
