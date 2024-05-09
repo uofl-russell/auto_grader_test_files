@@ -1,7 +1,7 @@
 function test_output {
 
 
-  output=$(python3 program.py)
+  output=$(python3 test.py)
   expected_output="Pass"
 
 if [ "$output" == "$expected_output" ] ; then
